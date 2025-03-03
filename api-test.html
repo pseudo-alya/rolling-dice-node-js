@@ -48,7 +48,7 @@
   <script>
     document.getElementById('testButton').addEventListener('click', async function() {
       try {
-        const response = await fetch('/roll-dice');
+        const response = await fetch('/roll-dice?sides=6');
         const data = await response.json();
         document.getElementById('apiResponse').textContent = JSON.stringify(data, null, 2);
       } catch (error) {
