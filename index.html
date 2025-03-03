@@ -1,1 +1,28 @@
-
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Dice Roller</title>
+  <link rel="stylesheet" href="index.css">
+  <!-- Load the dice roller logic first -->
+  <script defer src="diceRoller.js"></script>
+  <!-- Then attach event listeners -->
+  <script defer src="index.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Dice Roller</h1>
+      <button type="button" id="rollButton">Roll Dice</button>
+      <div class="dice-container">
+        <img id="diceImage" src="dice1.png" alt="Dice">
+        <p id="diceNumber">You rolled: 1</p>
+        <p style="text-align: center; margin-top: 20px;">
+          <a href="api-test.html">Test the Dice Roller API</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
